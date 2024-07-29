@@ -1,3 +1,7 @@
 spring:
   application:
     name: review
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/mamivo-review
