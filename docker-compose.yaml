@@ -1,0 +1,34 @@
+services:
+  mamivo-review-db:
+    container_name: mamivo-review-db
+    image: 'mongo:latest'
+    restart: always
+    ports:
+      - '27017:27017'
+    healthcheck:
+      test: [ "CMD", "echo", "db.getMongo()", "|", "mongosh", "--norc", "--quiet", "--host=localhost:27017"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    networks:
+      - mamivo
+
+  mamivo-review:
+    image: "amirlatifi/mamivo-review:01"
+    container_name: mamivo-review-ms
+    ports:
+      - 8080:8080
+    depends_on:
+      mamivo-review-db:
+        condition: service_healthy
+    environment:
+      SPRING_DATA_MONGODB_URI: "mongodb://mamivo-review-db:27017/mamivo-review"
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+    networks:
+      - mamivo
+
+networks:
+  mamivo:
+    driver: "bridge"
