@@ -1,4 +1,4 @@
-package com.mamivo.review.review;
+package com.mamivo.review;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

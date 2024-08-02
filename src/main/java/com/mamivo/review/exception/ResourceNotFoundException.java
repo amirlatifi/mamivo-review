@@ -1,4 +1,4 @@
-package com.mamivo.review.review.exception;
+package com.mamivo.review.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

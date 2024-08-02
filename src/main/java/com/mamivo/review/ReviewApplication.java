@@ -1,4 +1,4 @@
-package com.mamivo.review.review;
+package com.mamivo.review;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

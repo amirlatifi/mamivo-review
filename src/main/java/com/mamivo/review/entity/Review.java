@@ -1,4 +1,4 @@
-package com.mamivo.review.review.entity;
+package com.mamivo.review.entity;
 
 
 import lombok.*;

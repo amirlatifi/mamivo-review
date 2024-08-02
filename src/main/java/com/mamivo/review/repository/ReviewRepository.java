@@ -1,6 +1,6 @@
-package com.mamivo.review.review.repository;
+package com.mamivo.review.repository;
 
-import com.mamivo.review.review.entity.Review;
+import com.mamivo.review.entity.Review;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.mamivo.review.review.dto;
+package com.mamivo.review.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

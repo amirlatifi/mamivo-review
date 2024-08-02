@@ -1,9 +1,9 @@
-package com.mamivo.review.review.service.impl;
+package com.mamivo.review.service.impl;
 
-import com.mamivo.review.review.entity.Review;
-import com.mamivo.review.review.exception.ResourceNotFoundException;
-import com.mamivo.review.review.repository.ReviewRepository;
-import com.mamivo.review.review.service.IReviewService;
+import com.mamivo.review.entity.Review;
+import com.mamivo.review.exception.ResourceNotFoundException;
+import com.mamivo.review.repository.ReviewRepository;
+import com.mamivo.review.service.IReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

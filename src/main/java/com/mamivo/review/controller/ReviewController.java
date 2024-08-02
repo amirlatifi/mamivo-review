@@ -1,8 +1,8 @@
-package com.mamivo.review.review.controller;
+package com.mamivo.review.controller;
 
-import com.mamivo.review.review.dto.ResponseDto;
-import com.mamivo.review.review.entity.Review;
-import com.mamivo.review.review.service.IReviewService;
+import com.mamivo.review.entity.Review;
+import com.mamivo.review.dto.ResponseDto;
+import com.mamivo.review.service.IReviewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

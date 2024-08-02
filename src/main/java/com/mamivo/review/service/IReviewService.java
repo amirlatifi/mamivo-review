@@ -1,6 +1,6 @@
-package com.mamivo.review.review.service;
+package com.mamivo.review.service;
 
-import com.mamivo.review.review.entity.Review;
+import com.mamivo.review.entity.Review;
 
 import java.util.List;
 
