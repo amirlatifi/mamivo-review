@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mamivo.review</groupId>
-	<artifactId>review</artifactId>
+	<artifactId>mamivo-review</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>review</name>
 	<description>Reviews for Mamivo</description>
@@ -69,6 +69,16 @@
 							<artifactId>lombok</artifactId>
 						</exclude>
 					</excludes>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>com.google.cloud.tools</groupId>
+				<artifactId>jib-maven-plugin</artifactId>
+				<version>3.4.3</version>
+				<configuration>
+					<to>
+						<image>amirlatifi/${project.artifactId}:01</image>
+					</to>
 				</configuration>
 			</plugin>
 		</plugins>
